@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -30,7 +35,7 @@ h1, p {
 
 h1 {
     animation: flow 5s ease-in-out infinite;
-    background: linear-gradient(45deg, #FF4500,#FF9600, #FF5900);
+    background: linear-gradient(45deg, #FF4500,rgb(255, 230, 0), #FF5900);
     background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -64,7 +69,7 @@ a button {
     padding: 10px;
     background-color: transparent;
     font-weight: bold;
-    background: linear-gradient(45deg, #FF4500,#FF9600, #FF5900);
+    background: linear-gradient(45deg, #FF4500,rgb(255, 230, 0), #FF5900);
     background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
