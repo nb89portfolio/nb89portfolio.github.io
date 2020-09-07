@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+header nav a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0 15px 0 15px;
+}
+
+header nav a span {
+    margin: 0 5px 0 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    opacity: 50%;
+}
+
+header nav a:active span {
+    color: #ff9900;
+}
+
+header nav a:focus span {
+    color: #ff9900;
+}
+
+.md-i-btns {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header nav ul li a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0 15px 0 15px;
+}
+
+header nav ul li a span {
+    margin: 0 5px 0 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 635px) {
+    .hn-t-btns {
+        display: none;
+    }
+
+    header nav ul {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .hn-t-btns {
+        display: none;
+    }
+
+    header nav ul {
+        display: flex;
+    }
+
+    header nav ul li a {
+        margin: 0 5px 0 5px;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    flex: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer nav ul li a {
+    margin: 5px;
+}
+
+footer nav ul li a:hover span {
+    font-weight: bold;
+    opacity: 50%;
+}
+
+footer nav ul li a:active span {
+    font-weight: bold;
+    color: #ff9900;
+    opacity: 50%;
+}
+
+footer nav ul li a:focus span {
+    font-weight: bold;
+    color: #ff9900;
+}
+
+footer aside {
+    display: flex;
+    justify-content: center;
+}
