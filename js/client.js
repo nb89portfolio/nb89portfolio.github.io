@@ -73,6 +73,35 @@ class Main {
 
     constructor(){
         this.#main = document.createElement("main");
+
+        this.toLoad = [["Title1", "Date1", "Content1", false], ["Title2", "Date2", "Content2", true], ["Title3", "Date3", "Content3", false]];
+
+        this.toLoad.forEach(element => {
+            this.title = document.createElement("h1");
+            this.title.innerHTML = element[0];
+
+            this.date = document.createElement("h2");
+            this.date.innerHTML = element[1];
+
+            this.content = document.createElement("p");
+            this.content.innerHTML = element[2];
+
+            if(element[3]){
+                this.button = document.createElement("button");
+                this.button.innerHTML = "Go To!";
+            }
+
+            this.article = document.createElement("article");
+            this.article.appendChild(this.title);
+            this.article.appendChild(this.date);
+            this.article.appendChild(this.content);
+
+            if(element[3]){
+                this.article.appendChild(this.button);
+            }
+            this.#main.appendChild(this.article);
+        });
+
         document.body.appendChild(this.#main);
     }
 }
