@@ -4,10 +4,6 @@ class User {
     constructor(){
         this.#uid = "visitor";
     }
-
-    getUID(){
-        return this.#uid;
-    }
 }
 
 class Header {
@@ -66,17 +62,60 @@ class Header {
 
         document.body.appendChild(this.#header);
     }
+
+    setButtonEvents(main){
+        this.list = this.#header.getElementsByTagName("button");
+
+        for(let index = 0; index < this.list.length; index++){
+            switch(index) {
+                case 0:
+                    this.list[index].addEventListener("click", main.setDestruction);
+                    this.list[index].addEventListener("click", main.setNews);
+                    break;
+                case 1:
+                    this.list[index].addEventListener("click", main.setDestruction);
+                    this.list[index].addEventListener("click", main.setNews);
+                    break;
+                case 2:
+                    this.list[index].addEventListener("click", main.setDestruction);
+                    this.list[index].addEventListener("click", main.setNews);
+                    break;
+                case 3:
+                    this.list[index].addEventListener("click", main.setDestruction);
+                    this.list[index].addEventListener("click", main.setNews);
+                    break;
+                case 4:
+                    this.list[index].addEventListener("click", main.setDestruction);
+                    this.list[index].addEventListener("click", main.setNews);
+                    break;
+            }
+        }
+    }
 }
 
 class Main {
     #main;
+    #news;
+    #tutorials;
+    #projects;
+    #account;
 
     constructor(){
-        this.#main = document.createElement("main");
+        this.#main = document.createElement("main"); 
 
-        this.toLoad = [["Title1", "Date1", "Content1", false], ["Title2", "Date2", "Content2", true], ["Title3", "Date3", "Content3", false]];
+        this.#news = [["Title1", "Date1", "Content1", false], ["Title2", "Date2", "Content2", true], ["Title3", "Date3", "Content3", false]];
+        this.#tutorials = [["TTitle1", "Date1", "Content1", false], ["TTitle2", "Date2", "Content2", true], ["TTitle3", "Date3", "Content3", false]];
+        this.#projects = [["PTitle1", "Date1", "Content1", false], ["PTitle2", "Date2", "Content2", true], ["PTitle3", "Date3", "Content3", false]];
+    
+        this.setNews();
+    }
 
-        this.toLoad.forEach(element => {
+    setDestruction(){
+        this.#main.innerHTML = "";
+    }
+
+    setNews(){
+        this.#news.forEach(element => {
             this.title = document.createElement("h1");
             this.title.innerHTML = element[0];
 
@@ -102,7 +141,71 @@ class Main {
             this.#main.appendChild(this.article);
         });
 
-        document.body.appendChild(this.#main);
+        document.body.appendChild(this.#main);        
+    }
+
+    setTutorials(){
+        this.#tutorials.forEach(element => {
+            this.title = document.createElement("h1");
+            this.title.innerHTML = element[0];
+
+            this.date = document.createElement("h2");
+            this.date.innerHTML = element[1];
+
+            this.content = document.createElement("p");
+            this.content.innerHTML = element[2];
+
+            if(element[3]){
+                this.button = document.createElement("button");
+                this.button.innerHTML = "Go To!";
+            }
+
+            this.article = document.createElement("article");
+            this.article.appendChild(this.title);
+            this.article.appendChild(this.date);
+            this.article.appendChild(this.content);
+
+            if(element[3]){
+                this.article.appendChild(this.button);
+            }
+            this.#main.appendChild(this.article);
+        });
+
+        document.body.appendChild(this.#main);  
+    }
+
+    setProjects(){
+        this.#projects.forEach(element => {
+            this.title = document.createElement("h1");
+            this.title.innerHTML = element[0];
+
+            this.date = document.createElement("h2");
+            this.date.innerHTML = element[1];
+
+            this.content = document.createElement("p");
+            this.content.innerHTML = element[2];
+
+            if(element[3]){
+                this.button = document.createElement("button");
+                this.button.innerHTML = "Go To!";
+            }
+
+            this.article = document.createElement("article");
+            this.article.appendChild(this.title);
+            this.article.appendChild(this.date);
+            this.article.appendChild(this.content);
+
+            if(element[3]){
+                this.article.appendChild(this.button);
+            }
+            this.#main.appendChild(this.article);
+        });
+
+        document.body.appendChild(this.#main);  
+    }
+
+    setAccount(){
+
     }
 }
 
@@ -124,5 +227,7 @@ let user = new User;
 let header = new Header;
 let main = new Main;
 let footer = new Footer;
+
+header.setButtonEvents(main);
 
 console.log();
