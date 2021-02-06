@@ -10,7 +10,7 @@ a {
 }
 
 header nav {
-    padding: 25px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,7 +33,7 @@ header nav aside {
 }
 
 header nav aside a {
-    margin: 0 5px 0 5px;    
+    margin: 0 15px 0 15px;    
     font-weight: bold;
     color: #ffb300;
 }
@@ -44,4 +44,9 @@ header nav aside a:hover {
 
 header nav aside a:focus {
     color: black;
+}
+
+header nav aside ul {
+    list-style: none;
+    display: none;
 }

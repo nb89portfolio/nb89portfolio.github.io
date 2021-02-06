@@ -3,7 +3,7 @@
 ## Table of Contents
 
 1. [Description](#Description)
-2. [](#)
+2. [Plan](#Plan)
 
 ## Description
 
@@ -18,7 +18,7 @@ Designed as a portfolio to display knowledge and skills of HTML, CSS, and JavaSc
 5. [ ] ++ load this documents
 6. [ ] + create cv content page
 7. [ ] + create tutorials page   
-8. [ ] Add css
+8. [x] Add css
 9. [ ] Revise objectives 
 
 ## Requirements
