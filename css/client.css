@@ -47,6 +47,7 @@ header nav aside a:focus {
 }
 
 header nav aside ul {
+    display: flex;
+    flex-direction: row;
     list-style: none;
-    display: none;
 }

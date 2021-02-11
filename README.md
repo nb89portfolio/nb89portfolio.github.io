@@ -7,24 +7,37 @@
 
 ## Description
 
-Designed as a portfolio to display knowledge and skills of HTML, CSS, and JavaScript. Plans include building a client with a subscription model for classes and project requisition in progress. 
+This is an on going project in terms of designing a portfolio to display knowledge and skills regarding HTML, CSS, and JavaScript.  
 
-## Plan
+## Goals 
 
-1. [x] index page
-2. [x] + navigation bar
-3. [x] ++ buttons news(img), cv, and turorials
-4. [ ] + news content page
-5. [ ] ++ load this documents
-6. [ ] + create cv content page
-7. [ ] + create tutorials page   
-8. [x] Add css
-9. [ ] Revise objectives 
+### Layout:
+1. [x] Logo.
+1. [x] Navigation bar.
+1. [] Tutorials and project links.
 
-## Requirements
+### Tutorials:
+1. [ ] HTML5.
 
-1. [ ] Html 5 semantics.
-2. [ ] CSS3 standards.
-3. [ ] Bootstrap technology display.
-4. [ ] CSS3 Flex technology display.
-5. [ ] Knowledge of forms. 
+#### Requirements
+
+##### Specifications
+
+##### Testing 
+
+1. [ ] CSS.
+1. [ ] JavaScript.
+1. [ ] ReactJs. 
+1. [ ] NodeJs.
+1. [ ] AngularJs.  
+1. [ ] LAMP Stack.
+1. [ ] PHP.
+1. [ ] MySQL.
+1. [ ] Java.
+1. [ ] Android studio.
+1. [ ] ...
+
+### Projects:
+1. [ ] Client.
+1. [ ] Market place.
+1. [ ] Stock application.  
