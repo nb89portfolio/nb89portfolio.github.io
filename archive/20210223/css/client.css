@@ -51,3 +51,8 @@ header nav aside ul {
     flex-direction: row;
     list-style: none;
 }
+
+header nav aside a img {
+    height: 24px;
+    width: 24px;
+}
