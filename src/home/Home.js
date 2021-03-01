@@ -8,9 +8,15 @@ class Home extends Component {
     constructor() {
         super()
         this.state = {     
-            sampleBlogArticles: sampleBlogArticles,
+            sampleBlogArticles: [],
             searchField: ''
         }
+    }
+
+    componentDidMount() {
+        fetch('https://nb89portfolio.github.io/src/home/blog/fakeapidata.html')
+            .then( response => response.json())
+            .then(articles => this.setState({ sampleBlogArticles: articles}));
     }
 
     onSearchChange = (event) => {
@@ -21,7 +27,7 @@ class Home extends Component {
         const filtering = this.state.sampleBlogArticles.filter(sampleBlogArticles => {
             return sampleBlogArticles.title.toLowerCase().includes(this.state.searchField.toLowerCase());
         })
-
+        
         return (            
             <main>
                 <SearchBar searchChange = {this.onSearchChange}/>
