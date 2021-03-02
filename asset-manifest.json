@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/nb89portfolio.github.io/static/css/main.59106a53.chunk.css",
+    "main.js": "/nb89portfolio.github.io/static/js/main.ce6fd731.chunk.js",
+    "main.js.map": "/nb89portfolio.github.io/static/js/main.ce6fd731.chunk.js.map",
+    "runtime-main.js": "/nb89portfolio.github.io/static/js/runtime-main.6358ff77.js",
+    "runtime-main.js.map": "/nb89portfolio.github.io/static/js/runtime-main.6358ff77.js.map",
+    "static/js/2.1c43288d.chunk.js": "/nb89portfolio.github.io/static/js/2.1c43288d.chunk.js",
+    "static/js/2.1c43288d.chunk.js.map": "/nb89portfolio.github.io/static/js/2.1c43288d.chunk.js.map",
+    "static/js/3.195cbb0e.chunk.js": "/nb89portfolio.github.io/static/js/3.195cbb0e.chunk.js",
+    "static/js/3.195cbb0e.chunk.js.map": "/nb89portfolio.github.io/static/js/3.195cbb0e.chunk.js.map",
+    "index.html": "/nb89portfolio.github.io/index.html",
+    "static/css/main.59106a53.chunk.css.map": "/nb89portfolio.github.io/static/css/main.59106a53.chunk.css.map",
+    "static/js/2.1c43288d.chunk.js.LICENSE.txt": "/nb89portfolio.github.io/static/js/2.1c43288d.chunk.js.LICENSE.txt",
+    "static/media/StackOverflow.f044e53d.svg": "/nb89portfolio.github.io/static/media/StackOverflow.f044e53d.svg",
+    "static/media/github.89e7ef62.svg": "/nb89portfolio.github.io/static/media/github.89e7ef62.svg",
+    "static/media/linkedin.db112da7.svg": "/nb89portfolio.github.io/static/media/linkedin.db112da7.svg",
+    "static/media/logo.5859db46.svg": "/nb89portfolio.github.io/static/media/logo.5859db46.svg",
+    "static/media/plum.9d33c677.svg": "/nb89portfolio.github.io/static/media/plum.9d33c677.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6358ff77.js",
+    "static/js/2.1c43288d.chunk.js",
+    "static/css/main.59106a53.chunk.css",
+    "static/js/main.ce6fd731.chunk.js"
+  ]
+}
